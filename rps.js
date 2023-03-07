@@ -1,8 +1,9 @@
 const options = ["rock", "paper", "scissors"];
 
+let playerChoice = prompt("Present your weapon of choice: ");
 
 compChoice = getComputerChoice(options)
-
+roundResult = playRound(compChoice, text.toLowerCase(playerChoice))
 
 
 
@@ -12,8 +13,7 @@ function getComputerChoice(options) {
     return options[Math.floor(Math.random() * 3)];
 }
 
-function playRound(comp, player) {
-    
+function playRound(comp, player) { 
     if (comp === "rock") {
         if (player === "scissors") {
             return "You LOSE, Rock crushes Scissors!"
@@ -41,14 +41,6 @@ function playRound(comp, player) {
     else {
         return "Draw!"
     }
-    
-    && player === "scissors") {
-        return "Computer WINS!"
-    }
-    else if (comp === "scissors" && player === "paper") {
-        return "Computer WINS!"
-    }
-    
 }
 
 console.log(compChoice);
