@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(46, 50, 54);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img {
+    height: 200px;
+}
+.choice {
+    display: flex;
+    height: 200px;
+    width: 200px;
+
+    padding: 100px;
+    background-color: grey;
+}
+
+button {
+    transition-duration: 0.2s;
+    border-style: solid;
+    /* background-color: teal; */
+    /* border: orchid; */
+}
+
+button:hover {
+    background-color:grey;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    /* border-color: white; */
+    border-color: white;
+}

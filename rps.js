@@ -2,7 +2,7 @@ const options = ["rock", "paper", "scissors"];
 
 
 
-game()
+// game()
 
 function getComputerChoice(options) {
     return options[Math.floor(Math.random() * 3)];
@@ -46,7 +46,7 @@ function playRound(comp, player) {
 function game() {
     let score = [0, 0];
     let playerChoice;
-    for (i = 0; i < 5; i++) {
+
         playerChoice = prompt("Present your weapon of choice: ");
         compChoice = getComputerChoice(options)
         roundResult = playRound(compChoice, playerChoice.toLowerCase())
@@ -65,6 +65,5 @@ function game() {
         else {
             console.log(roundResult);
         }
-    }
 }
 
